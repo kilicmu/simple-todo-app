@@ -1,0 +1,34 @@
+$fork-size :18px;
+$fork-color: rgb(161, 161, 161);
+@mixin fork {
+  .fork{
+  width: $fork-size;
+  height: $fork-size;
+  
+  position: relative;
+  transition: transform .5s;
+}
+
+.fork:hover{
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.fork::before,
+.fork::after {
+  content: "";
+  position: absolute;
+  height: $fork-size;
+  width: 2px;
+  right: $fork-size / 2 - 1px;
+  background-color: $fork-color;
+}
+
+.fork::before {
+  transform: rotate(45deg);
+}
+
+.fork::after {
+  transform: rotate(-45deg);
+}
+}

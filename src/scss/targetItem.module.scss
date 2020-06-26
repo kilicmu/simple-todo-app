@@ -1,0 +1,78 @@
+@import "./common.scss";
+@import "./shapes.scss";
+@include fork;
+.itemOutline{
+  margin-bottom: 8px;
+  height: 52px;
+  background-color: #151515be;
+}
+
+.textArea {
+  margin-left: px2vw(23);
+}
+
+.statusImg{
+  margin-left: px2vw(18);
+  width: 24px;
+  margin-top: 14px;
+  float:left;
+  cursor: pointer;
+}
+
+.sendTargetItem {
+  height: 52px;
+  background-color: #151515be;
+  width: px2vw(700);
+  bottom: px2vh(47);
+  display: flex;
+  align-content: center;
+  position: absolute;
+}
+
+
+
+// @media screen and (min-width: 820px){
+//   .sendTargetItem, .targetDescript {
+//     width: px2vw(700) - $left-menu-width;
+//   }
+// }
+
+.sendStatus{
+  margin-left: px2vw(18);
+  width: 24px;
+  height: 24px;
+  margin-top: 14px;
+}
+
+.inputArea{
+  color: white;
+  width: 100%;
+  margin-right: px2vw(18);
+  border: none;
+  outline: none;
+  background-color: #ffffff00;
+  margin-left: px2vw(23);
+}
+
+.targetDescript{
+  line-height: 52px;
+  color: white;
+  font-size: 14px;
+  margin-left: 10px;
+  display: inline-block;
+  height: 52px;
+  width: px2vw(450);
+  white-space: nowrap;  
+  text-overflow:ellipsis; 
+  overflow:hidden;
+}
+
+.forkPosition{
+  // float: right;
+  margin-top: 16px;
+  margin-right: 10px;
+  float:right;
+  display: inline-block;
+  // z-index: 1;
+}
+

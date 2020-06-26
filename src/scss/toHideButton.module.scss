@@ -1,0 +1,30 @@
+@import "./common.scss";
+.toHideButton{
+  width: 70px;
+  height: 24px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  animation: all 1s;
+}
+
+.finished{
+  font-size: 8.32px;
+  color: white;
+  font-weight: bold;
+  line-height: 24px;
+  margin-left: 9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.nextIcon{
+  height: 14px;
+  margin-left: 4px;
+  margin-top: 5px;
+  
+}
+

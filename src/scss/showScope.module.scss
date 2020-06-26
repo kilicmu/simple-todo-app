@@ -1,0 +1,17 @@
+@import "./common.scss";
+.showScope{
+  box-sizing: border-box;
+  height: px2vh(1000);
+  width: px2vw(700);
+  overflow-y: scroll;
+}
+
+.showScope::-webkit-scrollbar {
+    display: none;
+}
+
+// @media screen and (min-width: 820px){
+//   .showScope {
+//     width: px2vw(700) - $left-menu-width;
+//   }
+// }

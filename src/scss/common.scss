@@ -1,0 +1,14 @@
+$design-width: 750;
+$design-height: 1334;
+// $left-menu-width: 20vw;
+$dpr: 2;
+
+@function px2vw($px) {
+  @return ($px / $design-width) * 100vw;
+}
+
+@function px2vh($px) {
+  @return ($px / $design-height) * 100vh;
+}
+
+

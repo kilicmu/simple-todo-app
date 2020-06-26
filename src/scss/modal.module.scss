@@ -1,0 +1,52 @@
+@import "./shapes.scss";
+@include fork;
+
+$modal-border: 1px solid #e8eaec;
+
+.curtain{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  position: fixed;
+}
+
+.modalBox{
+  width: 500px;
+  height: 100px;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1056;
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
+}
+
+.header{
+  padding: 14px 16px;
+  border-bottom: $modal-border;
+  .fork{
+    margin-right: 0;
+    float: right;
+  }
+  p {
+    font-size: 16px;
+    margin-left: 0;
+    color: #2e4e7e;
+    display: inline;
+  }
+}
+
+
+
+.content{
+  padding: 5px 16px;
+}
+
+.footer{
+  border-top: $modal-border;
+  padding: 6px 16px;
+}

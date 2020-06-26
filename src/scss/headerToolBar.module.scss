@@ -1,0 +1,66 @@
+@import "./common.scss";
+
+.heades{
+  z-index: 100;
+  position: relative;
+}
+.HeaderToolBar {
+  width: 100%;
+  
+}
+
+.myDay {
+  font-size: 24px;
+  color: white;
+  -webkit-user-select: none;
+  font-weight: bolder;
+  display: inline-block;
+}
+
+.currentTime {
+  margin-top: px2vh(8);
+  font-size: 10px;
+  color: white;
+  display: inline-block;
+  -webkit-user-select: none;
+}
+
+.toolsBar {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  width: 76px;
+  transform: translateY(-75%);
+}
+
+.toolBtn {
+  width: 26px;
+  float: right;
+}
+
+.toolBtn,.testBtn{
+  cursor: pointer;
+}
+
+.toolBtn:active{
+  transform: scale(.95);
+}
+
+.testBtn {
+  width: 26px;
+  float: left;
+}
+
+
+
+
+.toolBox{
+  width: 200px;
+  background-color: white;
+  top: 30px;
+  right: 0;
+  z-index: 1999;
+  position: absolute;
+  box-shadow: 1px 1px 5px rgba(141, 141, 141, 0.452);
+  transition: height .3s;
+}
